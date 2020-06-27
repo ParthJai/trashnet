@@ -19,4 +19,5 @@ The size of the original dataset, ~3.5GB, exceeds the git-lfs maximum size so it
 **If you are using the dataset, please give a citation of this repository. The dataset can be downloaded [here](http://drive.google.com/drive/folders/0B3P9oO5A3RvSUW9qTG11Ul83TEE).**
 
 ### Model description
-Pretrained resnet 50 is trained with the help of fastai library. Model was able to achieve the accuracy of 88.5% with 70/13/17 train/val/test split (as done by original author). [Here](https://github.com/fastai/fastai) is the original link to fastai library.
+Pretrained resnet 50 is trained with the help of fastai library. Model was able to achieve the accuracy of 91.034%(previously 88.5%) with 70/13/17 train/val/test split (as done by original author).
+In this approach we first train only a couple of layers of resnet 50 while keeping rest of the weights as it is. Then we unfreeze the whole model and train all layers.
